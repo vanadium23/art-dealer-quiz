@@ -9,7 +9,7 @@ var GameStore = Reflux.createStore({
     listenables: Actions,
     init: function () {
         this.game = {
-            TOTAL: 1,
+            TOTAL: 10,
             wins: 0,
             quiz: this.grabPair(),
         };
