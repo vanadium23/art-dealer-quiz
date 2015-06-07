@@ -9,7 +9,6 @@ require('styles/Painting.less');
 var Painting = React.createClass({
   handleClick: function (event) {
     if (!this.props.painting.choosen) {
-        console.log("handleClick " + this.props.index);
         Actions.choosePainting(this.props.index);
     }
   },

@@ -9,7 +9,7 @@ var GameStore = Reflux.createStore({
     listenables: Actions,
     init: function () {
         this.game = {
-            TOTAL: 10,
+            TOTAL: 1,
             wins: 0,
             quiz: this.grabPair(),
         };
@@ -35,7 +35,7 @@ var GameStore = Reflux.createStore({
         } else {
             this.game.wins = 0;
         }
-        if (this.game.wins > this.game.TOTAL) {
+        if (this.game.wins >= this.game.TOTAL) {
             this.game.complete = true;
         } else {
             setTimeout(Actions.generateQuiz, 3000);

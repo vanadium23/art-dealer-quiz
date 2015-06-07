@@ -20,7 +20,6 @@ var Mark = React.createClass({
     } else if (status.correct === false) {
         status.color = 'red';
     }
-    console.log(status);
 
     var classes = ['central-elem',
                   'central-mark',
